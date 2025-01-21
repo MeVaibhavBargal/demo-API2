@@ -1,12 +1,12 @@
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
-  name: passengers-api
+  name: my-api
   description: Lookup information on active passengers. Name, location etc.
 spec:
   type: openapi
   lifecycle: production
-  owner: roadie
-  system: passengers
+  owner: vaibhav
+  system: api
   definition:
     $text: https://github.com/RoadieHQ/sample-service/blob/main/api-spec.yaml
