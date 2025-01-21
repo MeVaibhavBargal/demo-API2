@@ -1,15 +1,12 @@
-apiVersion: backstage.io/api2
+apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
-  name: api-example2
-  description: An example of a Backstage application.
-  # Example for optional annotations
-  annotations:
-    github.com/project-slug: backstage/backstage
-    backstage.io/techdocs-ref: github:https://github.com/backstage/backstage.git
+  name: passengers-api
+  description: Lookup information on active passengers. Name, location etc.
 spec:
-  type: API
-  owner: vaibhav@gmail.com
-  lifecycle: experimental
-  apiConsumedBy:
-    - demo-API1
+  type: openapi
+  lifecycle: production
+  owner: roadie
+  system: passengers
+  definition:
+    $text: https://github.com/RoadieHQ/sample-service/blob/main/api-spec.yaml
