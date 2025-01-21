@@ -14,4 +14,4 @@ spec:
   consumesApis:
     - my-app
   apiConsumedBy:
-    - demo-API2
+    - demo-API1
